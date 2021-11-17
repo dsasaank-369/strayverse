@@ -1,0 +1,160 @@
+body {
+  background: url(token-bg.png);
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.tokenomics {
+  /* background-color: #061650; */
+
+  padding: 20px;
+  width: 100%;
+}
+
+nav {
+  background-color: transparent;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 78px;
+}
+
+.tokenomics-container {
+  height: 60vh;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.inner1 h1 {
+  color: white !important;
+}
+
+.tokenomics-container img {
+  width: 223px;
+  height: 218px;
+  opacity: 0.5;
+}
+
+.inner1 {
+  text-align: center;
+  color: gray;
+}
+
+.inner1 h1 {
+  margin-top: 40px;
+}
+
+.supply-container {
+  height: 80vh;
+  color: white;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.list1 li {
+  opacity: 0.9;
+}
+
+.list2 li {
+  opacity: 0.9;
+}
+
+.logo-img {
+  width: 93px;
+  height: 93px;
+}
+
+a i {
+  color: white !important;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.phone2 {
+  width: 100%;
+  margin-top: -200px;
+  animation: spin 50s infinite;
+}
+
+.last {
+  padding: 20px;
+  color: white;
+  text-align: center;
+  background-color: #0d1433;
+  width: auto;
+}
+
+.last-container p {
+  color: gray !important;
+}
+
+.table {
+  display: table; /* Allow the centering to work */
+  margin: 0 auto;
+  color: white !important;
+}
+
+.table ul {
+  margin-top: 40px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.table ul li {
+  display: inline;
+  margin-right: 20px !important;
+}
+
+.group2 {
+  color: white;
+  font-size: 20px;
+  text-align: center !important;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.group2 i {
+  margin-right: 10px;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #888;
+  padding: 0.5em 0.6em;
+  cursor: pointer;
+}
+
+@media only screen and (max-device-width: 1000px) {
+  .tokenomics-container {
+    display: block;
+    /* overflow-x: hidden !important; */
+  }
+
+  .tokenomics-container img {
+    display: none;
+  }
+
+  .supply-container {
+    display: block;
+    height: auto;
+  }
+
+  .phone2 {
+    margin: 0;
+  }
+
+  .table ul li {
+    display: flex;
+    place-content: center;
+    margin-top: 5px;
+  }
+}

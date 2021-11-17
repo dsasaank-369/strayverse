@@ -1,0 +1,103 @@
+body {
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: #061650;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 78px;
+}
+
+.play-container {
+  color: white;
+  background-color: #061650 !important;
+  background: url(earn.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.play-container img {
+  width: 100%;
+}
+
+.inner {
+  display: grid;
+  place-content: center;
+}
+
+/* .inner p {
+  color: gray;
+} */
+
+.last {
+  padding: 20px;
+  color: white;
+  text-align: center;
+  background-color: #0d1433;
+  width: auto;
+}
+
+.last-container p {
+  color: gray !important;
+}
+
+.table {
+  display: table; /* Allow the centering to work */
+  margin: 0 auto;
+  color: white !important;
+}
+
+.table ul {
+  margin-top: 40px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.table ul li {
+  display: inline;
+  margin-right: 20px !important;
+}
+
+.group2 {
+  color: white;
+  font-size: 20px;
+  text-align: center !important;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.group2 i {
+  margin-right: 10px;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #888;
+  padding: 0.5em 0.6em;
+  cursor: pointer;
+}
+
+.logo-img {
+  width: 93px;
+  height: 93px;
+}
+
+a i {
+  color: white !important;
+}
+
+@media only screen and (max-device-width: 1000px) {
+  .play-container {
+    display: block;
+  }
+  .table ul li {
+    display: flex;
+    place-content: center;
+    margin-top: 5px;
+  }
+}
