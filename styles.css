@@ -253,19 +253,19 @@ header {
   width: 100%;
 }
 
-.play1 {
+.mobilecards {
   display: none;
 }
 
 #card1 {
   position: relative;
-  left: -10px;
-  transition: 0.2s;
+  /* left: -10px;
+  transition: 0.2s; */
 }
 
 #card2 {
   position: relative;
-  transition: 0.2s;
+  /* transition: 0.2s; */
 }
 
 #card3 {
@@ -423,7 +423,7 @@ header {
 
 #coin1 {
   position: relative;
-  width: 90%;
+  width: 60%;
 }
 
 #coin2 {
@@ -434,21 +434,59 @@ a i {
   color: white !important;
 }
 
+.roadh {
+  display: none;
+}
+
+.coins {
+  display: none;
+}
+
 @media only screen and (max-device-width: 1000px) {
   .main-container {
-    height: auto;
-    width: 100%;
-    margin-left: 0px;
-    margin-top: 80px;
+    width: 327px;
+    height: 258px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 560px;
   }
+
+  .btn-outline-success {
+    color: white !important;
+  }
+
+  .inner4 h1 {
+    display: none;
+  }
+
+  .roadh {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    font-size: 36px;
+  }
+
+  .coins {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .coin1 {
+    width: 120% !important;
+  }
+
+  .coin2 {
+    width: 70% !important;
+  }
+
   .play-container {
     overflow-x: hidden !important;
     display: block;
   }
-  .phone-container {
+  /* .phone-container {
     overflow-x: hidden !important;
     display: block;
-  }
+  } */
   .tokenomics-container {
     overflow-x: hidden !important;
     display: block;
@@ -479,16 +517,47 @@ a i {
   .nav2 {
     display: none !important;
   }
-  .play1 {
-    display: block;
-  }
   #card1 {
     display: none;
   }
+  .mobilecards {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  #card11 {
+    position: relative;
+    width: 157.14px;
+    height: 221.04px;
+  }
+
+  #card13 {
+    position: relative;
+    width: 157.14px;
+    height: 221.04px;
+    margin-top: -40px;
+    padding-top: 20px;
+  }
+
+  #card12 {
+    position: relative;
+
+    width: 157.14px;
+    height: 221.04px;
+  }
+
   #card3 {
     display: none;
   }
   #card2 {
+    display: none;
+  }
+
+  #coin1 {
+    display: none;
+  }
+
+  #coin2 {
     display: none;
   }
   header {
@@ -508,14 +577,40 @@ a i {
     display: block;
   }
 
-  #coin1 {
-    display: none;
-  }
-
-  #coin2 {
-    display: none;
-  }
   .tokenomics-container {
     grid-template-columns: 50% 50%;
+  }
+
+  header {
+    background-image: url(group.png) !important;
+    background-size: 100% 90%;
+  }
+
+  .roadbtn {
+    text-align: right;
+  }
+
+  .strayh {
+    font-size: 24px;
+  }
+
+  .strayp {
+    font-size: 14px;
+  }
+
+  .inner5 {
+    padding: 0px;
+  }
+
+  .inner5 p {
+    font-size: 13px;
+  }
+
+  .phone-container {
+    overflow-x: hidden;
+    grid-template-columns: 55% 45%;
+  }
+  .phone1 {
+    height: 90%;
   }
 }
