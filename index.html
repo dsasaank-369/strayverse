@@ -34,7 +34,6 @@
         src="https://i.pinimg.com/originals/47/9c/43/479c43b4d42bad1b5327ac23352474b6.gif"
         alt="Loading..."
       />
-      <!-- <h1 class="load">Loading</h1> -->
     </div>
 
     <header>
@@ -159,12 +158,12 @@
 
       <div class="main">
         <div class="main-container">
-          <p class="strayh">Strayverse</p>
+          <p class="strayh">STRAYVERSE</p>
           <p class="strayp">
-            is a Play to Earn Doggy Gaming Token focusing on the Strays of the
-            world bringing players together to earn via Strayverse Economy. Play
-            , Earn and go to the Virtual Metaverse of the Strayverse Network. 5%
-            of the revenue will be donated to all the Stray based NGOs.
+            A Play to Earn Dog Gaming Token focusing on the Strays of the world
+            by bringing players together to earn via StrayVerse Economy. Play,
+            Earn and Visualize the Virtual Metaverse of the StrayVerse Network.
+            5% revenue generated will be donated to the Stray NGOs of the world.
           </p>
           <div class="buttons">
             <button type="button" class="btn btn-success">
@@ -213,6 +212,7 @@
 
     <section class="roadmap" id="roadmap">
       <div class="roadmap-container">
+        <h1 class="roadh">Roadmap</h1>
         <img id="" src="gif2.gif" alt="Loading..." />
         <!-- <div class="right"> -->
         <div
@@ -241,7 +241,7 @@
             training, matching up in battle arena, users can earn the native
             token $STV!
           </p>
-          <a href="">
+          <a href="" class="roadbtn">
             <button type="button" class="btn btn-light">View Roadmap</button>
           </a>
         </div>
@@ -250,18 +250,37 @@
     </section>
     <section class="play" id="play">
       <div class="play-container">
-        <img
+        <!-- <img
           src="play.png"
           data-aos="zoom-in-right"
           data-aos-duration="1000"
           data-aos-delay="200"
           class="play1"
           alt=""
+        /> -->
+        <div class="mobilecards">
+          <img src="card11.png" id="card11" />
+          <img src="card12.png" id="card13" />
+
+          <img src="card13.png" id="card12" />
+        </div>
+
+        <img
+          src="card1.png"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="1000"
+          id="card1"
         />
-        <img src="card1.png" id="card1" />
 
         <img src="card3.png" id="card3" />
-        <img src="card2.png" id="card2" />
+        <img
+          src="card2.png"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="1000"
+          id="card2"
+        />
         <!-- <div class="right"> -->
         <div
           class="inner1"
@@ -284,14 +303,24 @@
     </section>
     <section class="tokenomics" id="tokenomics">
       <div class="tokenomics-container">
-        <img
-          src="tokenomics.png"
-          alt=""
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          data-aos-delay="200"
-          class="mobilecoin"
-        />
+        <div class="coins">
+          <img
+            src="coin2.png"
+            class="coin1"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            alt=""
+          />
+          <img
+            src="coin1.png"
+            class="coin2"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            alt=""
+          />
+        </div>
 
         <img src="coin1.png" id="coin1" alt="" />
         <img src="coin2.png" id="coin2" alt="" />
@@ -404,19 +433,26 @@
     <script>
       let coin1 = document.getElementById("coin1");
       let coin2 = document.getElementById("coin2");
-      let card1 = document.getElementById("card1");
-      let card2 = document.getElementById("card2");
-      let card3 = document.getElementById("card3");
+      // let card1 = document.getElementById("card1");
+      // let card2 = document.getElementById("card2");
+      // let card3 = document.getElementById("card3");
+      let card11 = document.getElementById("card11");
+      let card12 = document.getElementById("card12");
+      let card13 = document.getElementById("card13");
 
       window.addEventListener("scroll", function () {
         let value = window.scrollY;
         value1 = value + 1;
-        card1.style.left = value1 * 0.05 + "px";
-        card2.style.right = value1 * 0.05 + "px";
-        card3.style.left = value * 0.15 + "px";
+        // card1.style.left = value1 * 0.05 + "px";
+        // card2.style.right = value1 * 0.05 + "px";
+        // card3.style.left = value * 0.15 + "px";
 
-        coin1.style.left = value * 0.15 + "px";
-        coin2.style.right = value * 0.15 + "px";
+        card11.style.right = value * -0.12 + "px";
+        card12.style.left = value1 * -0.12 + "px";
+        // card13.style.left = value * 0.02 + "px";
+
+        coin1.style.left = value * 0.18 + "px";
+        coin2.style.right = value * 0.18 + "px";
       });
     </script>
     <script
