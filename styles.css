@@ -504,6 +504,9 @@ a i {
     overflow-x: hidden !important;
     display: block;
   }
+  .roadmap-container img {
+    height: auto;
+  }
   .table ul li {
     display: flex;
     place-content: center;
