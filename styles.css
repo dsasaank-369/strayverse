@@ -329,15 +329,15 @@ header {
 
 .dontmiss {
   background-color: black;
-  background-image: url(cloud1.png) !important;
-  width: 100%;
-  background-size: 100% 100%;
+
   height: auto;
   color: white;
 }
 
 .dontmiss-container {
-  /* padding: 20px; */
+  background-image: url(26309.png) !important;
+  width: 100%;
+  background-size: 100% 100%;
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -347,7 +347,9 @@ header {
 }
 
 .inner3 {
-  /* background: url(cloud.png); */
+  /* background-image: url(26309.png) !important;
+  width: 100%;
+  background-size: 100% 100%; */
   padding: 1.25em;
   display: grid;
   place-content: center;
@@ -586,7 +588,7 @@ a i {
   }
 
   header {
-    background-image: url(group.png) !important;
+    background-image: url(Group.png) !important;
     background-size: 100% 90%;
   }
 
@@ -616,5 +618,5 @@ a i {
   }
   .phone1 {
     height: 90%;
- }
+  }
 }
