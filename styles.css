@@ -6,9 +6,12 @@ body {
   overflow-x: hidden;
 }
 
-/* * {
-  cursor: url(bone.cur), default !important;
-} */
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+  animation-delay: 3s;
+  /* animation-timing-function: linear;
+  animation-iteration-count: infinite; */
+}
 
 #loading {
   width: 100%;
@@ -25,6 +28,10 @@ body {
 
 #loading-image {
   margin-top: 10%;
+}
+
+.roadmapgif {
+  border-radius: 0% 0% 16% 10% / 10% 0% 100% 0%;
 }
 
 .load {
@@ -329,15 +336,15 @@ header {
 
 .dontmiss {
   background-color: black;
-
+  background-image: url(cloud1.png) !important;
+  width: 100%;
+  background-size: 100% 100%;
   height: auto;
   color: white;
 }
 
 .dontmiss-container {
-  background-image: url(26309.png) !important;
-  width: 100%;
-  background-size: 100% 100%;
+  /* padding: 20px; */
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -347,9 +354,7 @@ header {
 }
 
 .inner3 {
-  /* background-image: url(26309.png) !important;
-  width: 100%;
-  background-size: 100% 100%; */
+  /* background: url(cloud.png); */
   padding: 1.25em;
   display: grid;
   place-content: center;
@@ -588,7 +593,7 @@ a i {
   }
 
   header {
-    background-image: url(Group.png) !important;
+    background-image: url(group.png) !important;
     background-size: 100% 90%;
   }
 
@@ -618,5 +623,11 @@ a i {
   }
   .phone1 {
     height: 90%;
+  }
+  .animate__animated.animate__bounce {
+    --animate-duration: 2s;
+    animation-delay: 0s;
+    /* animation-timing-function: linear;
+  animation-iteration-count: infinite; */
   }
 }
